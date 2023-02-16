@@ -48,7 +48,7 @@ public class UserRepository : IUserRepository
         return _users.FirstOrDefault(u => u.Id == id) ?? new User();
     }
 
-  // Adding a new user
+    // Adding a new user
     public void Add(User user)
     {
         // The new user's Id is assigned by adding 1 to the last user's Id in the user list
@@ -66,7 +66,7 @@ public class UserRepository : IUserRepository
         existingUser.Email = user.Email;
     }
 
-   // Deletes the specified user
+    // Deletes the specified user
     public void Delete(int id)
     {
         // The user to be deleted is found by ID using the Get method
